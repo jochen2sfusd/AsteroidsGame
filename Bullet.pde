@@ -1,4 +1,4 @@
-public class Bullet extends Floater {
+class Bullet extends Floater {
   private double dRadians;
   public Bullet() {
     myCenterX = falco.getX();
