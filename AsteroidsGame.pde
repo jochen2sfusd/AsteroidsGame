@@ -5,11 +5,8 @@ ArrayList <Bullet> bulletian = new ArrayList <Bullet> ();
 int distance, distance2;
 boolean shot = false;
 
-public void settings() {
-  size(900, 450);
-}
-
 public void setup() {
+  size(900, 450);
   background(0);
   for (int i = 0; i < starryNight.length; i++) {
     starryNight[i] = new Stars();
