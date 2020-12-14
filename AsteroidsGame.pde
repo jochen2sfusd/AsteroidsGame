@@ -5,9 +5,12 @@ ArrayList <Bullet> bulletian = new ArrayList <Bullet> ();
 int distance, distance2;
 boolean shot = false;
 
+public void settings() {
+  size(900, 450);
+}
+
 public void setup() {
   background(0);
-  size(900, 450);
   for (int i = 0; i < starryNight.length; i++) {
     starryNight[i] = new Stars();
   }
@@ -73,10 +76,10 @@ public void keyPressed() {
   if (keyCode == 68) { //right key
     falco.rotate(45);
   }
-  if (keyCode == UP) { //up key
+  if (keyCode == 87) { //up key
     falco.accelerate(.5);
   }
-  if (keyCode == DOWN) { // down key
+  if (keyCode == 83) { // down key
     falco.accelerate(-.5);
   }
   //hyperspace
