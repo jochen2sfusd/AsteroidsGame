@@ -70,13 +70,13 @@ public void draw() {
 }
 
 public void keyPressed() {
-  if (keyCode == LEFT) { // left key
+  if (keyCode == 65) { // left key
     falco.rotate(-45);
   }
-  if (keyCode == RIGHT) { //right key
+  if (keyCode == 68) { //right key
     falco.rotate(45);
   }
-  if (keyCode == 38) { //up key
+  if (keyCode == UP) { //up key
     falco.accelerate(.5);
   }
   if (keyCode == DOWN) { // down key
